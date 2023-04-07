@@ -1,5 +1,5 @@
 # Project Title
-Duplicate Question Detection for CQA Websites
+Identifying duplicate question pairs in CQA websites using Traditional ML Techniques & Deep Learning.
 
 ## Project Description
 The project aims to detect duplicate questions from CQA (Community Question Answering) websites such as Quora and Stack Overflow using deep learning models. The project will evaluate the performance of various deep learning models such as Convolutional Neural Networks (CNNs) and Transformer models like BERT and RoBERTa. The impact of hyperparameters such as number of layers, learning rate, and batch size on the performance of existing and new deep learning models will be explored. Additionally, the project will compare the performance of deep learning models to traditional machine learning models like random forest and SVM. The use of transfer learning with pre-trained language models will also be explored to improve model accuracy. Advanced feature engineering techniques such as semantic analysis, topic modeling, and Named Entity Recognition (NER) will also be explored to improve model accuracy.
