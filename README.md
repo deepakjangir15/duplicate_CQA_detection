@@ -27,7 +27,7 @@ The project aims to detect duplicate questions from CQA (Community Question Answ
 ### Installation
 1. Clone the repo
     ```bash
-    git clone https://github.com/<your_username>/duplicate-question-detection.git
+    git clone https://github.com/tdeepak509/duplicate_CQA_detection.git
     ```
 2. Install the dependencies
     ```bash
