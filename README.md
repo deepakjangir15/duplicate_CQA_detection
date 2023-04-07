@@ -35,7 +35,13 @@ The project aims to detect duplicate questions from CQA (Community Question Answ
     ```
 
 ### Data
-The dataset used in this project can be found on [Kaggle](https://www.kaggle.com/c/quora-question-pairs/data). The dataset contains question pairs labeled as duplicates or not.
+For this research, two separate datasets will be utilised. The first dataset will be fetched from Quora (general domain CQA website), and the second dataset will be retrieved from Stack Overflow (a technical domain CQA website). Both datasets have at least three columns, the first two of which are for the original and duplicate questions, and the third column is the target label, which indicates whether or not the question pair is duplicate.
+
+1. Dataset 1 – Quora
+The dataset for the CQA website Quora is fetched from the Initial Quora Dataset release which is hosted on [Amazon S3](http://qim.fs.quoracdn.net/quora_duplicate_questions.tsv). The dataset is present as a .tsv file consisting of 404,290 no of rows, 6 data fields, and the overall size of this file is 54.8 MB. Each line in the dataset consists of potential duplicate question pair. 
+
+2. Dataset 2 – StackOverflow
+The dataset of Stack Overflow is fetched by executing a Big Data Query against the Stack Exchange Data Explorer (SEDE) (Data Stack Exchange, n.d.) which in turn fetches data from Stack Exchange’s data dump repository. This data repository is provided by Creative Commons Data Dump Service. The SEDE is Stack Exchange's official file browser, from where the users can run queries to access the data. The questions, answers, changes, reviews, users, badges, tags, and other information that you see on Stack Exchange are all kept in a relational database. And in the Stack Exchange’s data repository, stack overflow alone has 23M questions, which is a lot of information. 
 
 ## Usage
 The project is divided into different Jupyter notebooks for each deep learning model and feature engineering technique. The notebooks can be run in the following order:
